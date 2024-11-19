@@ -1,126 +1,68 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  padding: 0;
 }
 
 body {
-  background-color: rgb(21, 2, 28);
-  font-family: sans-serif;
+  background-color: black;
+  color: white;
   text-align: center;
-}
-
-#fundo {
-  background-color: rgb(21, 14, 21);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  font-family: sans-serif;
 }
 
 #container {
-  width: 30%;
-  height: 50%;
+  margin-top: 100px;
+  width: 80%;
+  max-width: 400px;
   margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  background-color: rgb(19, 1, 19);
-  padding: 40px;
-  border-radius: 30px;
-  opacity: 0.8;
-  box-shadow: 0 0 99px rgb(78, 46, 107);
 }
 
 h1 {
-  margin-top: 5px;
-  opacity: 0.5;
-  font-size: 26px;
-  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-bottom: 10px;
+  opacity: 0.9;
 }
 
 p {
-  opacity: 0.6;
-  font-size: 16px;
-  margin-bottom: 6px;
-  color: rgb(153, 144, 144);
+  margin-bottom: 40px;
+  opacity: 0.7;
 }
 
 input,
 button {
-  width: 85%;
-  padding: 1.5%;
-  font-size: 18px;
-  border-radius: 10px;
-  margin-top: 3px;
-  height: 50px;
-  border: none;
+  display: block;
+  width: 100%;
+
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 4px;
 }
 
-input[placeholder] {
-  font-size: 18px;
+input {
+  margin-bottom: 20px;
 }
 
 button {
-  background-color: rgb(108, 57, 156);
-  color: white;
   border: none;
-  font-weight: 750;
+  background-color: blueviolet;
+  color: white;
+  transition: filter 0.2s;
 }
 
 button:hover {
-  filter: brightness(0.75);
+  filter: brightness(1.2);
   cursor: pointer;
 }
 
 #resposta {
-  margin-top: 10px;
+  margin-top: 30px;
+
   transition: opacity 1s;
-  font-size: 15px;
-  color: #e7e7e7;
 }
 
 #resposta div {
-  font-size: 15px;
-  font-weight: lighter;
-  opacity: 0.7;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-@media only screen and (min-width: 1050px) and (max-width: 1300px) {
-  #container {
-    width: 39%;
-    height: 62%;
-  }
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1050px) {
-  #container {
-    width: 55%;
-    height: 60%;
-  }
-}
-@media only screen and (min-width: 1300px) and (max-width: 1500px) {
-  #container {
-    width: 42%;
-    height: 50%;
-  }
-}
-@media only screen and (min-width: 700px) and (max-width: 900px) {
-  #container {
-    width: 55%;
-    height: 55%;
-    padding: 15px;
-    gap: 2px;
-  }
-}
-@media only screen and (min-width: 200px) and (max-width: 700px) {
-  #container {
-    width: 70%;
-    height: 50%;
-    padding: 15px;
-    gap: 2px;
-  }
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
